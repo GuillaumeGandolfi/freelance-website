@@ -1,3 +1,16 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript",
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "warn", // Avertissement pour les variables inutilisées
+    "no-console": "warn", // Avertissement pour les consoles.log
+    "prettier/prettier": ["error", { "endOfLine": "auto" }], // Intégration avec Prettier pour formatage
+    "semi": ["error", "always"], // Ajoute des points-virgules
+    "quotes": ["error", "single"] // Utilise les guillemets simples
+  }
 }
