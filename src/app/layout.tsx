@@ -1,4 +1,3 @@
-// src/app/layout.tsx
 import '../styles/globals.css';
 import Header from '../components/Header';
 
@@ -15,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang='fr'>
       <head />
-      <body className='min-h-screen flex flex-col bg-gray-100 text-gray-900'>
+      <body className='min-h-screen flex flex-col bg-darkBlack text-white'>
         <Header />
         <main className='container mx-auto px-4 py-6 flex-grow'>
           {children}

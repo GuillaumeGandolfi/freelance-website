@@ -9,19 +9,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Palette sobre et professionnelle
-        gray: {
-          100: '#f7fafc',
-          900: '#1a202c',
-        },
-        blue: {
-          500: '#3b82f6',
-          600: '#2563eb',
-        },
+        darkBlack: '#08060f',
+        nightBlue: '#1a0f30',
+        lightViolet: '#673ffe',
         white: '#ffffff',
       },
       fontFamily: {
-        sans: ['Roboto', 'sans-serif'], // Police classique et lisible
+        sans: ['Roboto', 'sans-serif'],
       },
     },
   },
