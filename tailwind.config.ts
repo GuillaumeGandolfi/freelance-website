@@ -1,24 +1,29 @@
-import type { Config } from "tailwindcss";
+// tailwind.config.js
+import type { Config } from 'tailwindcss';
 
-// Exportation de la configuration Tailwind
 export default {
-  // Définit les fichiers où Tailwind doit rechercher les classes CSS utilisées
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",  // Scan des classes dans les fichiers de pages
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",  // Scan des classes dans les composants
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}", // Scan des classes dans le dossier app si utilisé
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-
-  // Personnalisation du thème Tailwind
   theme: {
     extend: {
-      // Ajout de couleurs personnalisées basées sur des variables CSS
       colors: {
-        background: "var(--background)", // Couleur d'arrière-plan personnalisée
-        foreground: "var(--foreground)", // Couleur de premier plan personnalisée
+        // Palette sobre et professionnelle
+        gray: {
+          100: '#f7fafc',
+          900: '#1a202c',
+        },
+        blue: {
+          500: '#3b82f6',
+          600: '#2563eb',
+        },
+        white: '#ffffff',
+      },
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'], // Police classique et lisible
       },
     },
   },
-
   plugins: [],
 } satisfies Config;
